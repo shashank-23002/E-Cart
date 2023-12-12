@@ -47,7 +47,7 @@ const SellerDashboard = () => {
         <>
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#4d1c9c" }}>
+                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#830023" }}>
                     <Toolbar sx={{ pr: '24px' }}>
                         <IconButton
                             edge="start"
@@ -91,7 +91,7 @@ const SellerDashboard = () => {
                             >
                                 <LocalMallIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
-                                SHOPCART
+                                Dak Seva Portal
                             </NavLogo>
                         </Typography>
 
@@ -122,7 +122,7 @@ const SellerDashboard = () => {
                             >
                                 <LocalMallIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
-                                SHOPCART
+                                Dak Seva Portal
                             </NavLogo>
                         </Typography>
 
@@ -154,7 +154,7 @@ const SellerDashboard = () => {
                         <Route path="/Seller/products/product/:id" element={<ViewProductSeller />} />
 
                         {
-                            currentRole === "Shopcart" &&
+                            currentRole === "DakSevaPortal" &&
                             <>
                                 <Route path="/Seller/shopcart" element={<ShopcartSpecial />} />
                                 <Route path="/Seller/uploadproducts" element={<Products productData={productDataList} />} />

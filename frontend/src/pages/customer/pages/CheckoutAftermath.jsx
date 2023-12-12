@@ -1,6 +1,6 @@
 import { Container, Paper, Typography } from '@mui/material'
 import React from 'react'
-import { LightPurpleButton } from '../../../utils/buttonStyles'
+import { StylishGreenButton } from '../../../utils/buttonStyles'
 import { KeyboardDoubleArrowLeft } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 
@@ -20,11 +20,11 @@ const CheckoutAftermath = () => {
                             confirmation, and will send you an update when your order has
                             shipped.
                         </Typography>
-                        <LightPurpleButton sx={{ mt: 10 }} onClick={() => {
+                        <StylishGreenButton sx={{ mt: 10 }} onClick={() => {
                             navigate("/")
                         }}>
                             <KeyboardDoubleArrowLeft /> Back to Home
-                        </LightPurpleButton>
+                        </StylishGreenButton>
                     </React.Fragment>
                 </Paper>
             </Container>

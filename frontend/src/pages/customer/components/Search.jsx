@@ -36,7 +36,7 @@ const Search = () => {
                 }}
             />
             <SearchIconWrapper>
-                <SearchIcon sx={{ color: "#4d1c9c" }} />
+                <SearchIcon sx={{ color: "#830023" }} />
             </SearchIconWrapper>
         </SearchContainer>
     )

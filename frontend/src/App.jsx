@@ -85,7 +85,7 @@ const App = () => {
         </>
       }
 
-      {(isLoggedIn && (currentRole === "Seller" || currentRole === "Shopcart")) && (
+      {(isLoggedIn && (currentRole === "Seller" || currentRole === "DakSevaPortal")) && (
         <>
           <SellerDashboard />
         </>

@@ -71,7 +71,7 @@ export const LightPurpleButton = styled(Button)`
 
 export const BasicButton = styled(Button)`
   && {
-    background-color: #4d1c9c;
+    background-color: #830023;
     color: #fff;
     &:hover {
       background-color: #7a1ccb;
@@ -107,6 +107,18 @@ export const IndigoButton = styled(Button)`
     color: white;
     &:hover {
       background-color: #534ea6;
+      border-color: #473d90;
+      box-shadow: none;
+    }
+  }
+`;
+
+export const StylishGreenButton = styled(Button)`
+  && {
+    background-color: #0c7659;
+    color: white;
+    &:hover {
+      background-color: #c6c526;
       border-color: #473d90;
       box-shadow: none;
     }

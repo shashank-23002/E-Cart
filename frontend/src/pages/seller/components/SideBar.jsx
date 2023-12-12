@@ -24,7 +24,7 @@ const SideBar = () => {
                     sx={(location.pathname === "/" || location.pathname === "/Seller/dashboard") ? styles.currentStyle : styles.normalStyle}
                 >
                     <ListItemIcon>
-                        <WidgetsIcon sx={{ color: (location.pathname === "/" || location.pathname === "/Seller/dashboard") ? '#4d1c9c' : 'inherit' }} />
+                        <WidgetsIcon sx={{ color: (location.pathname === "/" || location.pathname === "/Seller/dashboard") ? '#830023' : 'inherit' }} />
                     </ListItemIcon>
                     <ListItemText primary="Home" />
                 </ListItemButton>
@@ -34,7 +34,7 @@ const SideBar = () => {
                     sx={location.pathname.startsWith('/Seller/products') ? styles.currentStyle : styles.normalStyle}
                 >
                     <ListItemIcon>
-                        <ShoppingCartIcon sx={{ color: location.pathname.startsWith('/Seller/products') ? '#4d1c9c' : 'inherit' }} />
+                        <ShoppingCartIcon sx={{ color: location.pathname.startsWith('/Seller/products') ? '#830023' : 'inherit' }} />
                     </ListItemIcon>
                     <ListItemText primary="Products" />
                 </ListItemButton>
@@ -43,20 +43,20 @@ const SideBar = () => {
                     sx={location.pathname.startsWith('/Seller/orders') ? styles.currentStyle : styles.normalStyle}
                 >
                     <ListItemIcon>
-                        <PendingActionsIcon sx={{ color: location.pathname.startsWith("/Seller/orders") ? '#4d1c9c' : 'inherit' }} />
+                        <PendingActionsIcon sx={{ color: location.pathname.startsWith("/Seller/orders") ? '#830023' : 'inherit' }} />
                     </ListItemIcon>
                     <ListItemText primary="Orders" />
                 </ListItemButton>
                 {
-                    currentRole === "Shopcart" &&
+                    currentRole === "DakSevaPortal" &&
                     <ListItemButton
-                        component={Link} to="/Seller/shopcart"
-                        sx={location.pathname.startsWith('/Seller/shopcart') ? styles.currentStyle : styles.normalStyle}
+                        component={Link} to="/Seller/daksevaportal"
+                        sx={location.pathname.startsWith('/Seller/daksevaportal') ? styles.currentStyle : styles.normalStyle}
                     >
                         <ListItemIcon>
-                            <AdminPanelSettingsIcon sx={{ color: location.pathname.startsWith("/Seller/shopcart") ? '#4d1c9c' : 'inherit' }} />
+                            <AdminPanelSettingsIcon sx={{ color: location.pathname.startsWith("/Seller/daksevaportal") ? '#830023' : 'inherit' }} />
                         </ListItemIcon>
-                        <ListItemText primary="Shopcart" />
+                        <ListItemText primary="DakSevaPortal" />
                     </ListItemButton>
                 }
             </React.Fragment>
@@ -67,7 +67,7 @@ const SideBar = () => {
                     sx={location.pathname.startsWith('/Seller/profile') ? styles.currentStyle : styles.normalStyle}
                 >
                     <ListItemIcon>
-                        <AccountCircleIcon sx={{ color: location.pathname.startsWith("/Seller/profile") ? '#4d1c9c' : 'inherit' }} />
+                        <AccountCircleIcon sx={{ color: location.pathname.startsWith("/Seller/profile") ? '#830023' : 'inherit' }} />
                     </ListItemIcon>
                     <ListItemText primary="Profile" />
                 </ListItemButton>
@@ -76,7 +76,7 @@ const SideBar = () => {
                     sx={location.pathname.startsWith('/logout') ? styles.currentStyle : styles.normalStyle}
                 >
                     <ListItemIcon>
-                        <LogoutIcon sx={{ color: location.pathname.startsWith("/logout") ? '#4d1c9c' : 'inherit' }} />
+                        <LogoutIcon sx={{ color: location.pathname.startsWith("/logout") ? '#830023' : 'inherit' }} />
                     </ListItemIcon>
                     <ListItemText primary="Logout" />
                 </ListItemButton>
@@ -94,7 +94,7 @@ const styles = {
         backgroundColor: "inherit"
     },
     currentStyle: {
-        color: "#4d1c9c",
+        color: "#830023",
         backgroundColor: "#ebebeb"
     },
 }

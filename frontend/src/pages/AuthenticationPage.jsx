@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Grid, Box, Typography, Paper, Checkbox, FormControlLabel, TextField, CssBaseline, IconButton, InputAdornment, CircularProgress } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import { LightPurpleButton } from '../utils/buttonStyles';
+import { StylishGreenButton } from '../utils/buttonStyles';
 import { authUser } from '../redux/userHandle';
 import styled from 'styled-components';
 import Popup from '../components/Popup';
@@ -212,14 +212,14 @@ const AuthenticationPage = ({ mode, role }) => {
                                     label="Remember me"
                                 />
                             </Grid>
-                            <LightPurpleButton
+                            <StylishGreenButton
                                 type="submit"
                                 fullWidth
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
                             >
                                 {loader ? <CircularProgress size={24} color="inherit" /> : mode}
-                            </LightPurpleButton>
+                            </StylishGreenButton>
                             <Grid container>
                                 <Grid>
                                     {mode === "Register" ?
