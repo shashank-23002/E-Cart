@@ -1,11 +1,11 @@
 
 ## Features
 
-- **User Registration:** DakSevaPortal allows users to register as customers or sellers, enabling a tailored shopping experience.
+- **User Registration:** ShopCart allows users to register as customers or sellers, enabling a tailored shopping experience.
 
 - **Cart System:** Customers can add products to their cart for easy checkout. The cart allows them to review and manage their selections before completing the purchase.
 
-- **Product Search:** DakSevaPortal offers a search functionality where customers can find products by name or browse through categories such as Electronics, Clothes, Kitchen, and more.
+- **Product Search:** ShopCart offers a search functionality where customers can find products by name or browse through categories such as Electronics, Clothes, Kitchen, and more.
 
 - **Reviews and Ratings:** Customers can leave reviews and ratings (out of 5) for products they've purchased, providing valuable feedback for sellers and building trust within the community.
 

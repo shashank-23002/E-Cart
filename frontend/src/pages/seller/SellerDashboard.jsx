@@ -25,7 +25,7 @@ import AddProduct from './pages/AddProduct';
 import { useSelector } from 'react-redux';
 import Products from '../../components/Products';
 import { productDataList } from '../../utils/products';
-import DakSevaPortalSpecial from './pages/DakSevaPortalSpecial';
+import ShopcartSpecial from './pages/ShopcartSpecial';
 import ShowCustomers from './pages/ShowCustomers';
 import SellerProfile from './pages/SellerProfile';
 
@@ -47,7 +47,7 @@ const SellerDashboard = () => {
         <>
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#90072c" }}>
+                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#4d1c9c" }}>
                     <Toolbar sx={{ pr: '24px' }}>
                         <IconButton
                             edge="start"
@@ -91,7 +91,7 @@ const SellerDashboard = () => {
                             >
                                 <LocalMallIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
-                                DakSevaPortal
+                                SHOPCART
                             </NavLogo>
                         </Typography>
 
@@ -122,7 +122,7 @@ const SellerDashboard = () => {
                             >
                                 <LocalMallIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
-                                DakSevaPortal
+                                SHOPCART
                             </NavLogo>
                         </Typography>
 
@@ -154,9 +154,9 @@ const SellerDashboard = () => {
                         <Route path="/Seller/products/product/:id" element={<ViewProductSeller />} />
 
                         {
-                            currentRole === "DakSevaPortal" &&
+                            currentRole === "Shopcart" &&
                             <>
-                                <Route path="/Seller/DakSevaPortal" element={<DakSevaPortalSpecial />} />
+                                <Route path="/Seller/shopcart" element={<ShopcartSpecial />} />
                                 <Route path="/Seller/uploadproducts" element={<Products productData={productDataList} />} />
                             </>
                         }

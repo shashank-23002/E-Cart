@@ -52,7 +52,7 @@ const ShowProducts = () => {
     },
   ];
 
-  const DakSevaPortalActions = [
+  const shopcartActions = [
     {
       icon: <AddCardIcon color="primary" />, name: 'Add New Product',
       action: () => navigate("/Seller/addproduct")
@@ -84,7 +84,7 @@ const ShowProducts = () => {
                 </IndigoButton>
                 <br /><br />
                 {
-                  currentRole === "DakSevaPortal" &&
+                  currentRole === "Shopcart" &&
                   <BrownButton onClick={() => navigate("/Seller/uploadproducts")}>
                     Upload Product
                   </BrownButton>
@@ -122,9 +122,9 @@ const ShowProducts = () => {
                   </ProductGrid>
                 }
                 {
-                  currentRole === "DakSevaPortal"
+                  currentRole === "Shopcart"
                     ?
-                    <SpeedDialTemplate actions={DakSevaPortalActions} />
+                    <SpeedDialTemplate actions={shopcartActions} />
                     :
                     <SpeedDialTemplate actions={actions} />
                 }

@@ -73,7 +73,7 @@ const Products = ({ productData }) => {
                     </BasicButton>
                   </>
                 }
-                {currentRole === "DakSevaPortal" &&
+                {currentRole === "Shopcart" &&
                   <>
                     <BasicButton
                       onClick={(event) => handleUpload(event, data)}
