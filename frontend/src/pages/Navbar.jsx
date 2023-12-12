@@ -91,7 +91,7 @@ const Navbar = () => {
 
     return (
         <AppBar position="sticky">
-            <Container maxWidth="xl" sx={{ backgroundColor: "#4d1c9c" }}>
+            <Container maxWidth="xl" sx={{ backgroundColor: "#90072c" }}>
                 <Toolbar disableGutters>
 
                     {/* MOBILE */}
@@ -133,7 +133,7 @@ const Navbar = () => {
                                 duration={500}
                                 onClick={homeHandler}
                             >
-                                SHOPCART
+                                DakSevaPortal
                             </NavLogo>
                         </Typography>
                     </HomeContainer>
@@ -214,7 +214,7 @@ const Navbar = () => {
                             >
                                 <LocalMallIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
-                                SHOPCART
+                                DakSevaPortal
                             </NavLogo>
                         </Typography>
                     </HomeContainer>
@@ -285,7 +285,7 @@ const Navbar = () => {
                                     aria-haspopup="true"
                                     aria-expanded={open ? 'true' : undefined}
                                 >
-                                    <Avatar sx={{ width: 32, height: 32, backgroundColor: "#8970dc" }}>
+                                    <Avatar sx={{ width: 32, height: 32, backgroundColor: "#1c807f" }}>
                                         {String(currentUser.name).charAt(0)}
                                     </Avatar>
                                 </IconButton>

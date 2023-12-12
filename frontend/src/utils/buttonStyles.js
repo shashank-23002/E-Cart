@@ -49,25 +49,27 @@ export const BlueButton = styled(Button)`
   }
 `;
 
-export const PurpleButton = styled(Button)`
+// export const LightYellowButton = styled(Button)`
+//   && {
+//     background-color: #270843;
+//     color: #fff;
+//     &:hover {
+//       background-color: #3f1068;
+//     }
+//   }
+// `;
+
+export const LightYellowButton = styled(Button)`
   && {
-    background-color: #270843;
+    background-color: #dac056;
     color: #fff;
     &:hover {
-      background-color: #3f1068;
+      background-color: #f1c40d;
     }
   }
 `;
 
-export const LightPurpleButton = styled(Button)`
-  && {
-    background-color: #7f56da;
-    color: #fff;
-    &:hover {
-      background-color: #7a1ccb;
-    }
-  }
-`;
+
 
 export const BasicButton = styled(Button)`
   && {
@@ -81,10 +83,10 @@ export const BasicButton = styled(Button)`
 
 export const GreenButton = styled(Button)`
   && {
-    background-color: #133104;
+    background-color: #17807f;
     color: #fff;
     &:hover {
-      background-color: #266810;
+      background-color: #cca61b;
     }
   }
 `;

@@ -31,7 +31,7 @@ const AccountMenu = () => {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                     >
-                        <Avatar sx={{ width: 32, height: 32, backgroundColor: "#8970dc" }}>
+                        <Avatar sx={{ width: 32, height: 32, backgroundColor: "#1c807f" }}>
                             {String(currentUser.name).charAt(0)}
                         </Avatar>
                     </IconButton>

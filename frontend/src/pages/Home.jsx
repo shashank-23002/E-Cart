@@ -44,7 +44,9 @@ const Home = () => {
       >
         <ProductsMenu dropName="Categories" />
         <ProductsMenu dropName="Products" />
+        <ProductsMenu dropName="Products" />
       </Container>
+
       <BannerBox>
         <Banner />
       </BannerBox>
@@ -76,10 +78,6 @@ const Home = () => {
                 <LeftComponent>
                   <Slide products={productData} title="Top Selection" />
                 </LeftComponent>
-
-                <RightComponent>
-                  <img src={adURL} alt="" style={{ width: 217 }} />
-                </RightComponent>
               </Component>
 
               <Slide products={productData} title="Deals of the Day" />
@@ -114,7 +112,7 @@ const Component = styled(Box)`
 `;
 
 const LeftComponent = styled(Box)(({ theme }) => ({
-  width: '83%',
+  width: '100%',
   [theme.breakpoints.down('md')]: {
     width: '100%',
   },

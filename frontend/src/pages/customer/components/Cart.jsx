@@ -6,7 +6,7 @@ import emptyCart from "../../../assets/cartimg.png"
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import { addToCart, removeAllFromCart, removeFromCart } from '../../../redux/userSlice';
-import { BasicButton, LightPurpleButton } from '../../../utils/buttonStyles';
+import { BasicButton, LightYellowButton } from '../../../utils/buttonStyles';
 import { useNavigate } from 'react-router-dom';
 import { updateCustomer } from '../../../redux/userHandle';
 
@@ -73,11 +73,11 @@ const Cart = ({ setIsCartOpen }) => {
     return (
         <StyledContainer>
             <TopContainer>
-                <LightPurpleButton onClick={() => {
+                <LightYellowButton onClick={() => {
                     setIsCartOpen(false)
                 }}>
                     <KeyboardDoubleArrowLeftIcon /> Continue Shopping
-                </LightPurpleButton>
+                </LightYellowButton>
                 {cartDetails.length > 0 && (
                     <IconButton
                         sx={{ backgroundColor: "#3a3939", color: "white" }}
