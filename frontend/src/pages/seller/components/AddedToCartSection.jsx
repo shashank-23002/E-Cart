@@ -58,7 +58,7 @@ const AddedToCartSection = () => {
     return (
         <>
             {responseSpecificProducts ?
-                <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '16px' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '16px', marginBottom: '36px' }}>
                     <GreenButton
                         variant="contained"
                         onClick={() => navigate("/Seller/addproduct")}

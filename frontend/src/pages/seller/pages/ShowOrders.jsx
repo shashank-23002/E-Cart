@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import AddedToCartSection from '../components/AddedToCartSection';
 import OutForDeliverySection from '../components/OutForDeliverySection';
 
+import ShowProducts from './ShowProducts';
+
 const ShowOrders = () => {
 
   const [value, setValue] = useState(0);
@@ -25,6 +27,7 @@ const ShowOrders = () => {
       </Box>
       <CustomTabPanel value={value} index={0}>
         <AddedToCartSection />
+        <ShowProducts/>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <OutForDeliverySection />

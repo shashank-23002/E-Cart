@@ -5,6 +5,7 @@ import { getCustomers } from '../../../redux/userHandle';
 import TableTemplate from '../../../components/TableTemplate';
 import { Typography } from '@mui/material';
 import { IndigoButton } from '../../../utils/buttonStyles';
+// import { getInterestedCustomers } from '../../../../../backend/controllers/productController';
 
 const ShowCustomers = () => {
     const dispatch = useDispatch();
@@ -52,19 +53,21 @@ const ShowCustomers = () => {
                 </h1>
                 :
                 <>
-                    {responseCustomersList ?
+                {responseCustomersList ? 
+                    <>
+                    <Typography variant='h5' gutterBottom>
+                            Customer List: 
+                        </Typography>
+
+                    <TableTemplate buttonHaver={CustomersButtonHaver} columns={customersColumns} rows={customersRows} />
+                    </>
+                    :
+                        <>
                         <h1>
                             No Customers Till Now
                         </h1>
-                        :
-                        <>
-                            <Typography variant="h5" gutterBottom>
-                                Customers List:
-                            </Typography>
-
-                            <TableTemplate buttonHaver={CustomersButtonHaver} columns={customersColumns} rows={customersRows} />
                         </>
-                    }
+                }
                 </>
             }
         </>

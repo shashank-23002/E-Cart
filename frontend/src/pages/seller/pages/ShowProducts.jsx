@@ -79,9 +79,9 @@ const ShowProducts = () => {
           {
             responseSellerProducts ?
               <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '16px' }}>
-                <IndigoButton onClick={() => navigate("/Seller/addproduct")}>
+                {/* <IndigoButton onClick={() => navigate("/Seller/addproduct")}>
                   Add Product
-                </IndigoButton>
+                </IndigoButton> */}
                 <br /><br />
                 {
                   currentRole === "DakSevaPortal" &&
