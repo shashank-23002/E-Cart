@@ -36,7 +36,7 @@ const ShowCustomers = () => {
             <>
                 <IndigoButton
                     onClick={() => {
-                        console.log(row.name)
+                        alert(`Customer Name: ${row.name}\nProduct Quantity: ${row.quantity}`);
                     }}
                 >
                     View Customer History
@@ -53,7 +53,7 @@ const ShowCustomers = () => {
                 </h1>
                 :
                 <>
-                {responseCustomersList ? 
+                {customersList.length ? 
                     <>
                     <Typography variant='h5' gutterBottom>
                             Customer List: 
